@@ -1,3 +1,4 @@
+#!bin/bash
 #Script qui install nagios pour un DEBIAN en 10.3
 #https://cdimage.debian.org/debian-cd/current/amd64/iso-cd/debian-10.3.0-amd64-netinst.iso
 /usr/sbin/useradd -m nagios
