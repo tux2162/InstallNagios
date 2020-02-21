@@ -16,7 +16,7 @@ tar -zxvf nagios-4.4.2.tar.gz
 apt-get install -y  apache2 php php-gd php-imap php-curl 
 apt-get install -y  libxml-libxml-perl libnet-snmp-perl libperl-dev libnumber-format-perl libconfig-inifiles-perl libdatetime-perl libnet-dns-perl
 apt-get install -y libpng-dev libjpeg-dev libgd-dev
-apt-get install gcc make autoconf libc6 unzip
+apt-get install -y gcc make autoconf libc6 unzip
 
 cd /home/nagios/downloads/nagios-4.4.2
 ./configure --with-httpd-conf=/etc/apache2/sites-enabled --with-command-group=nagcmd
@@ -49,3 +49,8 @@ make install
 ls -lrtha /usr/local/nagios/libexec
 /usr/local/nagios/bin/nagios -v /usr/local/nagios/etc/nagios.cfg
 systemctl restart  nagios
+
+echo"----------------------------------------"
+echo"login : nagiosadmin"
+echo"password : pass"
+echo"----------------------------------------"
